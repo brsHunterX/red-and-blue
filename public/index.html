@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Red & Blue Barbearia</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <img src="./img/logo.svg" alt="Logo" />
+        <nav>
+          <ul>
+            <li><a href="#home">Início</a></li>
+            <li><a href="#services">Serviços</a></li>
+            <li><a href="#contact">Contato</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <section class="home" id="home">
+        <h1>Encontre seu estilo aqui!</h1>
+        <p>
+          Localizada na zona norte de São Paulo a
+          <strong>Barbearia Red & Blue</strong> traz para o mercado o que há de
+          melhor para o seu cabelo e barba. Fundada em 2021, já somos destaque
+          na cidade e conquista de novos clientese cada dia mais conquistamos
+          novos clientes.
+        </p>
+        <a class="button" href="#contact">Agendar um horário agora!</a>
+      </section>
+
+      <section class="about" id="about">
+        <img src="./img/about.png" alt="Homem sentado adimirando corte" />
+        <div class="text-box">
+          <h2>Desde 2021 cuidando de você!</h2>
+          <div class="divider"></div>
+          <p>
+            Localizada na zona norte de São Paulo a
+            <strong>Barbearia Red & Blue</strong> traz para o mercado o que há
+            de melhor para o seu cabelo e barba. Fundada em 2021, já somos
+            destaque na cidade e conquista de novos clientese cada dia mais
+            conquistamos novos clientes.
+          </p>
+          <br />
+          <p>Nossa missão:</p>
+          <br />
+          <p>
+            <em>
+              <strong>
+                "Proporcionar auto-estima e qualidade de vida aos clientes".
+              </strong>
+            </em>
+          </p>
+          <br />
+          <p>
+            Oferecemos profissionais experientes e antenados às mudanças no
+            mundo da moda. O atendimento possui padrão de excelência e
+            agilidade, garantindo qualidade e satisfação dos nossos clientes.
+          </p>
+          <a class="button" href="#contact">Agendar agora!</a>
+        </div>
+      </section>
+
+      <section class="services" id="services">
+        <div class="text-box">
+          <h2>
+            Conheça <br />
+            nossos serviços
+          </h2>
+          <div class="divider"></div>
+          <p>
+            Oferecemos os melhores serviços com oque existe de mais moderno,
+            para que você saia se sentindo um novo homem.
+          </p>
+          <a class="button" href="#contact">Agendar agora!</a>
+        </div>
+        <ul class="grid two-cols">
+          <li class="tile">
+            <h4>Cabelo</h4>
+            <p>Na tesoura ou máquina, como o cliente preferir.</p>
+            <h4>R$ 25,00</h4>
+          </li>
+          <li class="tile">
+            <h4>Barba</h4>
+            <p>Corte e desenho profissional da barba.</p>
+            <h4>R$ 18,00</h4>
+          </li>
+          <li class="tile">
+            <h4>Cabelo e Barba</h4>
+            <p>Pacote completo de corte e barba.</p>
+            <h4>R$ 30,00</h4>
+          </li>
+          <li class="tile">
+            <h4>Tratamento</h4>
+            <p>Faça sua hidratação ou reconstrução.</p>
+            <h4>R$ 40,00</h4>
+          </li>
+        </ul>
+      </section>
+
+      <section class="contact" id="contact">
+        <div class="text-box">
+          <h2>Encontre-nos</h2>
+          <div class="divider"></div>
+          <p>
+            Nossa barbearia se encontra no endereço abaixo. Atendemos de Terça a
+            Sabádo, em horário comercial.
+          </p>
+          <p class="address">
+            <i class="fa-solid fa-location-dot"></i>
+            Av. Imirim, 707 - Imirim, São Paulo - SP, 02464-200
+          </p>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.9764289076916!2d-46.644759384031126!3d-23.49735848471464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef7be63b40001%3A0x209b23fb6848cfb4!2sBarbearia%20Bronx!5e0!3m2!1spt-BR!2sbr!4v1639608078661!5m2!1spt-BR!2sbr"
+            width="100%"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
+        </div>
+        <div class="card">
+          <h2>Agende agora!</h2>
+          <div class="divider"></div>
+          <p>
+            Que tal reservar um horário agora? Basta preencher com seus<br />
+            dados o formulário abaixo.
+          </p>
+          <form action="#">
+            <div class="text-field">
+              <label for="name"> Nome Completo </label>
+              <input
+                id="name"
+                type="text"
+                name="name"
+                placeholder="João Da Silva"
+                required
+              />
+            </div>
+            <div class="text-field">
+              <label for="email"> Email </label>
+              <input
+                id="email"
+                type="email"
+                name="email"
+                placeholder="seu_email@domínio.com"
+                required
+              />
+            </div>
+            <div class="text-field">
+              <label for="phone"> Celular </label>
+              <input
+                id="phone"
+                type="number"
+                name="phone"
+                placeholder="(11) 99999-9999"
+                required
+              />
+            </div>
+            <div class="text-field">
+              <label for="date"> Horário </label>
+              <select id="date" name="date" required>
+                <option value="morning">Manhã</option>
+                <option value="evening">Noite</option>
+                <option value="night">Noite</option>
+              </select>
+            </div>
+            <div class="text-field">
+              <label for="message"> Mensagem </label>
+              <textarea
+                rows="10"
+                cols="30"
+                id="message"
+                name="message"
+                placeholder="Digite sua mensagem..."
+                required
+              ></textarea>
+            </div>
+            <input class="textarea" type="submit" value="Enviar mensagem" />
+          </form>
+        </div>
+      </section>
+      <footer>
+        <div>
+          <img src="./img/logo.svg" alt="Logo" />
+          <ul>
+            <li>
+              <a href="tel:">
+                <i class="fa-solid fa-phone"></i>
+                +55 (11) 2354-9874
+              </a>
+            </li>
+            <li>
+              <a href="#services">
+                <i class="fa-solid fa-mobile-alt"></i>
+                +55 (11) 97548-9874
+              </a>
+            </li>
+            <li>
+              <a href="#contact">
+                <i class="fa-solid fa-location-dot"></i>
+                Av. Imirim, 707 - Imirim, São Paulo - SP, 02464-200
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h4>Instagram</h4>
+          <ul class="grid three-cols">
+            <li class="tile insta">
+              <img src="./img/insta-01.jpg" alt="Imagem do Instagram" />
+            </li>
+            <li class="tile insta">
+              <img src="./img/insta-02.jpg" alt="Imagem do Instagram" />
+            </li>
+            <li class="tile insta">
+              <img src="./img/insta-03.jpg" alt="Imagem do Instagram" />
+            </li>
+            <li class="tile insta">
+              <img src="./img/insta-04.jpg" alt="Imagem do Instagram" />
+            </li>
+            <li class="tile insta">
+              <img src="./img/insta-05.jpg" alt="Imagem do Instagram" />
+            </li>
+            <li class="tile insta">
+              <img src="./img/insta-06.jpg" alt="Imagem do Instagram" />
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h4>Links</h4>
+          <ul>
+            <li>
+              <a href="#home"> Início </a>
+            </li>
+            <li>
+              <a href="#services"> Serviços </a>
+            </li>
+            <li>
+              <a href="#contact"> Contato </a>
+            </li>
+          </ul>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>

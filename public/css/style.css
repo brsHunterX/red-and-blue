@@ -1,0 +1,404 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Open+Sans:ital,wght@0,400;0,700;1,700&display=swap");
+
+:root {
+  /* COLOR */
+  --color-footer: #000000;
+  --color-divider: #3d3d3d;
+  --color-surface: #202020;
+  --color-primary: #0088e0;
+  --color-background: #1b1b1b;
+  --color-text-primary: #ffffff;
+  --color-text-secondary: #d2d2d2;
+  --color-text-tertiary: #8f8f8f;
+
+  /* TEXT-FAMILIES */
+  --text-font-family-primary: "Abril Fatface", cursive;
+  --text-font-family-secondary: "Open Sans", sans-serif;
+
+  /* TEXT - WEIGHTS */
+  --text-font-bold: 700;
+  --text-font-regular: 400;
+
+  /* TEXT - SIZES */
+  --text-font-size-xxxl: 3.625rem;
+  --text-font-size-xxl: 2.75rem;
+  --text-font-size-xl: 2.125rem;
+  --text-font-size-l: 1.5rem;
+  --text-font-size-m: 1.125rem;
+  --text-font-size-s: 1rem;
+  /* --text-font-size-s: 0.875rem; */
+
+  /* SPACES */
+  --space-xxxl: 5rem;
+  --space-xxl: 2.5rem;
+  --space-xl: 2rem;
+  --space-l: 1.25rem;
+  --space-m: 1rem;
+  --space-s: 0.5rem;
+  --space-xs: 0.25rem;
+
+  /* MOTION */
+  --motion-duration: 300ms;
+  --motion-timing-func: ease-in-out;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+html,
+body,
+main {
+  width: 100%;
+  height: 100%;
+  scroll-behavior: smooth;
+  background: var(--color-background);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.5;
+  color: var(--color-text-primary);
+  font-size: var(--text-font-size-s);
+  font-weight: var(--text-font-bold);
+  font-family: var(--text-font-family-primary);
+}
+
+h1 {
+  font-size: var(--space-xxxl);
+}
+
+h2 {
+  font-size: var(--space-xxl);
+}
+
+h3 {
+  font-size: var(--space-xl);
+}
+
+h4 {
+  font-size: var(--space-l);
+}
+
+h5 {
+  font-size: var(--space-m);
+}
+
+h6 {
+  font-size: var(--space-s);
+}
+
+a,
+p,
+body,
+span,
+label {
+  line-height: 1.5;
+  color: var(--color-text-secondary);
+  font-size: var(--text-font-size-s);
+  font-weight: var(--text-font-regular);
+  font-family: var(--text-font-family-secondary);
+}
+
+a {
+  text-decoration: none;
+}
+
+strong {
+  line-height: 1.5;
+  color: var(--color-text-secondary);
+  font-size: var(--text-font-size-s);
+  font-weight: var(--text-font-bold);
+  font-family: var(--text-font-family-secondary);
+}
+
+em {
+  font-style: italic;
+}
+
+ul {
+  margin: var(--space-l) 0;
+}
+
+ul li {
+  padding: var(--space-xs) 0;
+  color: var(--color-text-primary);
+}
+
+ul li a {
+  text-decoration: underline;
+}
+
+ul li i:first-child {
+  margin-right: var(--space-s);
+  font-size: var(--text-font-size-s);
+}
+
+.button,
+button,
+textarea,
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="submit"] {
+  margin: 0;
+  width: auto;
+  border: none;
+  font: inherit;
+  cursor: pointer;
+  overflow: visible;
+  user-select: none;
+  line-height: normal;
+  display: inline-block;
+  -webkit-appearance: none;
+}
+
+.button,
+button,
+input[type="submit"] {
+  color: var(--color-text-primary);
+  background: var(--color-primary);
+  font-size: var(--text-font-size-s);
+  font-weight: var(--text-font-bold);
+  padding: var(--space-m) var(--space-l);
+  font-family: var(--text-font-family-secondary);
+  transition: all var(--motion-duration) var(--motion-timing-func);
+}
+
+textarea,
+select,
+input[type="text"],
+input[type="email"],
+input[type="number"] {
+  height: 42px;
+  background: transparent;
+  color: var(--color-text-primary);
+  font-size: var(--text-font-size-s);
+  font-weight: var(--text-font-regular);
+  border: 1px solid var(--color-divider);
+  padding: var(--space-s) var(--space-m);
+  font-family: var(--text-font-family-secondary);
+  transition: all var(--motion-duration) var(--motion-timing-func);
+}
+
+textarea::placeholder,
+input[type="text"]::placeholder,
+input[type="email"]::placeholder,
+input[type="number"]::placeholder {
+  color: var(--color-text-tertiary);
+}
+
+select:focus,
+textarea:focus,
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus {
+  outline: none;
+}
+
+section {
+  width: 100%;
+  height: 100vh;
+  padding: 0 10%;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  position: fixed;
+  align-items: center;
+  padding: var(--space-m) 10%;
+  justify-content: space-between;
+  background: var(--color-surface);
+}
+
+header img {
+  width: 80px;
+  height: 80px;
+}
+
+header nav ul {
+  margin: 0;
+  display: flex;
+  gap: var(--space-l);
+}
+
+header nav ul li {
+  cursor: pointer;
+  transition: all var(--motion-duration) var(--motion-timing-func);
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: var(--color-text-primary);
+}
+
+section.home {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-blend-mode: multiply;
+  background: rgba(0, 0, 0, 0.8) url("../img/bg-home.jpg") no-repeat center
+    center / cover;
+}
+
+section.home p {
+  max-width: 40%;
+}
+
+section.home a {
+  margin-top: var(--space-xxxl);
+}
+
+section.about {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--color-surface);
+}
+
+section.about img {
+  width: 40%;
+}
+
+section.about a {
+  margin-top: var(--space-xxxl);
+}
+
+section.services {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+section.services a {
+  margin-top: var(--space-xxxl);
+}
+
+section.contact {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-blend-mode: multiply;
+  background: rgba(0, 0, 0, 0.8) url("../img/bg-contact.jpg") no-repeat top
+    center / cover;
+}
+
+section.contact .address {
+  margin: var(--space-l) 0;
+}
+
+section.contact .address i {
+  margin-right: var(--space-s);
+}
+
+section.contact form {
+  display: flex;
+  gap: var(--space-l);
+  flex-direction: column;
+  margin-top: var(--space-xl);
+  grid-template-columns: repeat(2, 1fr);
+}
+
+section.contact form textarea {
+  height: 200px;
+}
+
+section.contact form input[type="submit"] {
+  margin-top: var(--space-l);
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: var(--space-xxxl) 10%;
+  justify-content: space-between;
+  background: var(--color-footer);
+}
+
+footer img {
+  width: 80px;
+  height: 80px;
+}
+
+.divider {
+  height: 1px;
+  width: 100px;
+  margin: var(--space-l) 0;
+  background: var(--color-divider);
+}
+
+.text-field {
+  display: flex;
+  gap: var(--space-s);
+  flex-direction: column;
+}
+
+.text-box {
+  width: 40%;
+}
+
+.grid {
+  display: grid;
+  gap: var(--space-l);
+}
+
+.grid.two-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid.three-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid .tile {
+  display: flex;
+  cursor: pointer;
+  gap: var(--space-m);
+  flex-direction: column;
+  padding: var(--space-l);
+  border: 1px solid var(--color-divider);
+  transition: all var(--motion-duration) var(--motion-timing-func);
+}
+
+.grid .tile.insta {
+  padding: 0;
+  width: 80px;
+  height: 80px;
+  border: none;
+  cursor: pointer;
+}
+
+.grid .tile.insta img {
+  object-fit: cover;
+}
+
+.grid .tile:hover {
+  /* transform: scale(1.05); */
+  border: 1px solid var(--color-primary);
+}
+
+.grid .tile.insta:hover {
+  /* transform: scale(1.05); */
+  border: none;
+}
+
+.card {
+  width: 35%;
+  padding: var(--space-xl);
+  background: var(--color-surface);
+}
